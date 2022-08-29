@@ -90,7 +90,11 @@ const ResetPass = () => {
                   {msg}
                 </div>
               )}
-              <button type="submit" className="btn-secondary w-full mt-6">
+              <button
+                type="submit"
+                className="btn-secondary w-full mt-6"
+                onClick={handleSubmit}
+              >
                 Şifreyi Değiştir
               </button>
             </form>
