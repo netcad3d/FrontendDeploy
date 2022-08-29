@@ -30,7 +30,6 @@ const Signup = () => {
 
     dispatch(registerUser(user));
     e.target.reset();
-    navigate("/");
   };
 
   useEffect(() => {
@@ -47,6 +46,7 @@ const Signup = () => {
         icon: "info",
         confirmButtonText: "Tamam",
       });
+      navigate("/");
     }
   }, [auth.registerStatus]);
 
@@ -75,6 +75,7 @@ const Signup = () => {
                 placeholder="Kullanıcı Adı"
                 className="ring-1 ring-gray-300 w-full rounded-md mt-2 px-4 py-2 outline-none focus:ring-2 focus:text-primary focus:ring-white focus:bg-secondary placeholder:text-primary"
                 onChange={(e) => setUser({ ...user, username: e.target.value })}
+                required
               />
             </div>
 
@@ -88,6 +89,7 @@ const Signup = () => {
                 placeholder="Email"
                 className="ring-1 ring-gray-300 w-full rounded-md mt-2 px-4 py-2 outline-none focus:ring-2 focus:text-primary focus:ring-white focus:bg-secondary placeholder:text-primary"
                 onChange={(e) => setUser({ ...user, email: e.target.value })}
+                required
               />
             </div>
             <div className="pass-wrapper">
