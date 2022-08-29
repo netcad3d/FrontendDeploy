@@ -31,6 +31,9 @@ const boxes = document.querySelectorAll('.renderer');
 boxes.forEach(box => {
   box.remove();
 });
+
+const vtiDropBox = document.querySelector("._bigFileDrop_f5t4p_1");
+if(vtiDropBox) vtiDropBox.remove();
  
 
   return (
