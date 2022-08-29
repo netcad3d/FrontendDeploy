@@ -57,7 +57,11 @@ const ForgotPass = () => {
               {msg}
             </div>
           )}
-          <button className="btn-secondary w-full mt-6" type="submit">
+          <button
+            className="btn-secondary w-full mt-6"
+            type="submit"
+            onClick={handleSubmit}
+          >
             Gönder
           </button>
         </form>
