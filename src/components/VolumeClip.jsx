@@ -32,6 +32,8 @@ import loadingCube from "../assets/loadingCube.json";
 import { useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 
+import "../index.css";
+
 //import style from './VolumeViewer.module.css';
 const VolumeClip = () => {
   const vtkContainerRef = useRef(null);
