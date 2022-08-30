@@ -38,6 +38,8 @@ if(vtiDropBox) vtiDropBox.remove();
 const vtpDropBox = document.querySelector("._bigFileDrop_722mx_35");
 if(vtpDropBox) vtpDropBox.remove();
  
+const vtpControl = document.querySelector("._rootControl_722mx_17");
+if(vtpControl) vtpControl.remove();
 
   return (
     <>
