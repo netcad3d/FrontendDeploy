@@ -10,7 +10,7 @@ const ForgotPass = () => {
     e.preventDefault();
 
     try {
-      const url = `https://netcad-vtk.herokuapp.com/api/password-reset`;
+      const url = `https://backend-deploy-u6c4.vercel.app/api/password-reset`;
       const { data } = await axios.post(url, { email });
       setMsg(data.message);
 
