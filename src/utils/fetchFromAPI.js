@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const BASE_URL='https://netcad-vtk.herokuapp.com';
+const BASE_URL='https://backend-deploy-u6c4.vercel.app/';
 
 
 
