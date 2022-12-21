@@ -15,7 +15,7 @@ const EmailVerifyPage = () => {
   useEffect(() => {
     const verifyEmailUrl = async () => {
       try {
-        const url = `https://netcad-vtk.herokuapp.com/${param.id}/verify/${param.token}`;
+        const url = `https://backend-deploy-u6c4.vercel.app/${param.id}/verify/${param.token}`;
         const data = verifyToAPI(url);
         //console.log(data);
         localStorage.setItem("verify", data.verified);

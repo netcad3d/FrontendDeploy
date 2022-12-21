@@ -61,7 +61,7 @@ const FetchFiles = () => {
         Swal.fire("Başarıyla silindi!", "Silindi", "success");
 
         axios
-          .delete(`https://netcad-vtk.herokuapp.com/deleteFile/${fileId}`, config)
+          .delete(`https://backend-deploy-u6c4.vercel.app/deleteFile/${fileId}`, config)
           .then((res) => {
             res.status === 200
               ? toast.success("Başarıyla silindi.", {

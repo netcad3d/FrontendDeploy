@@ -12,7 +12,7 @@ const ResetPass = () => {
   const [error, setError] = useState("");
   const param = useParams();
 
-  const URL = `https://netcad-vtk.herokuapp.com/api/password-reset/${param.id}/${param.token}`;
+  const URL = `https://backend-deploy-u6c4.vercel.app/api/password-reset/${param.id}/${param.token}`;
 
   useEffect(() => {
     const verifyUrl = async () => {

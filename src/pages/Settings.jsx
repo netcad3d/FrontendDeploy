@@ -20,7 +20,7 @@ const Settings = () => {
 
   const handleSubmit = async (e) => {
 	e.preventDefault();
-	const url = `https://netcad-vtk.herokuapp.com/api/delete-account/${auth._id}`;
+	const url = `https://backend-deploy-u6c4.vercel.app/api/delete-account/${auth._id}`;
 	//console.log(url);
 
 	try {

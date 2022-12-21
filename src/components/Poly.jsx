@@ -25,7 +25,7 @@ const Poly = () => {
     }
   }, []);
 
-  const url = `https://netcad-vtk.herokuapp.com/getFile/${fileId}`;
+  const url = `https://backend-deploy-u6c4.vercel.app/getFile/${fileId}`;
 
   useEffect(() => {
     if (!context.current) {

@@ -275,7 +275,7 @@ const ManyRenderers = () => {
        // console.log(file);
         const fileId = file.fileId;
 
-        const url = `https://netcad-vtk.herokuapp.com/getFile/${fileId}`;
+        const url = `https://backend-deploy-u6c4.vercel.app/getFile/${fileId}`;
 
         addRenderer(url);
       });
