@@ -8,7 +8,7 @@ export const fetchFromAPI = async(url,token) => {
 	
 	const config = { headers: { Authorization: `Bearer ${token}` } };
 
-	const {data} = await axios.get(`${BASE_URL}/${url}`, config);
+	const {data} = await axios.get(`${BASE_URL}${url}`, config);
 return data;
 
 }
